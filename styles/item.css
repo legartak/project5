@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #65338d, #8a727c);
+}
+
+.item-section {
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 75px;
+}
+
+.dish-photo {
+  width: 280px;
+  height: auto;
+}
+
+.item-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.info-card {
+  width: 360px;
+  height: 640px;
+  border-radius: 25px;
+  background-color: #e2dfdf;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+}
+
+.item-short-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item-title {
+  font-size: 48px;
+}
+
+.buy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy-button {
+  cursor: pointer;
+  background-color: #ffd600;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.mass {
+  font-size: 18px;
+}
+
+.price {
+  color: #17a72e;
+  font-size: 24px;
+}
+
+.description-title {
+  font-size: 20px;
+}
+
+.energy-value {
+  font-size: 18px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.nutritional-value {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.item-ingridients,
+.item-description {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ingridients-title,
+.item-description-title {
+  font-size: 36px;
+}
+
+.description {
+  font-size: 18px;
+}
+
+.item-ingridients ul li {
+  margin-left: 25px;
+  font-size: 18px;
+}
+
+@media (max-width: 1300px) {
+  header,
+  footer,
+  .item-section {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .item-cards {
+    gap: 10px;
+  }
+}
+@media (max-width: 1180px) {
+  .info-card {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 280px;
+    height: 500px;
+  }
+  .item-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .item-section {
+    padding-top: 35px;
+    padding-bottom: 50px;
+  }
+  .info-card {
+    height: 450px;
+    gap: 75px;
+  }
+  .dish-photo {
+    width: 210px;
+  }
+  .item-title {
+    font-size: 36px;
+  }
+  .mass {
+    font-size: 14px;
+  }
+  .price {
+    font-size: 20px;
+  }
+  .description-title {
+    font-size: 18px;
+  }
+  .energy-value,
+  .element {
+    font-size: 16px;
+  }
+  .ingridients-title,
+  .item-description-title {
+    font-size: 28px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .item-ingridients ul li {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1020px) {
+  header,
+  footer,
+  .item-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 830px) {
+  .item-cards {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+@media (max-width: 375px) {
+  header,
+  footer,
+  .item-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .item-section {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+}/*# sourceMappingURL=item.css.map */

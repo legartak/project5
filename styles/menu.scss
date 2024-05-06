@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// selector to change svg color of icon to white
+.filter-white {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(354deg)
+    brightness(103%) contrast(102%);
+}
+
+a {
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #65338d, #8a727c);
+}
+
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+.we-have {
+  font-size: 56px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.menu-section {
+  padding: 0 100px;
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2dfdf;
+  border-radius: 25px;
+  padding: 20px 15px;
+  width: 320px;
+  height: 410px;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.dish-name {
+  font-size: 24px;
+  color: black;
+}
+
+.price {
+  margin-top: 6px;
+  font-size: 18px;
+  color: #17a72e;
+}
+
+.shawa {
+  width: 128px;
+  height: auto;
+}
+
+.dish-plate {
+  width: 256px;
+  height: auto;
+}
+
+.bottle {
+  width: 80px;
+  height: auto;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 75px;
+  justify-content: center;
+}
+
+@media (max-width: 1310px) {
+  .menu-grid {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .menu-grid {
+    gap: 15px;
+  }
+
+  header,
+  footer,
+  .menu-section {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .menu-grid {
+    gap: 75px;
+    grid-template-columns: repeat(2, 320px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu-grid {
+    gap: 50px;
+  }
+
+  .menu-section {
+    padding-top: 35px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .section-title {
+    font-size: 66px;
+  }
+
+  .we-have {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .menu-grid {
+    gap: 25px;
+  }
+
+  header,
+  footer,
+  .menu-section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 745px) {
+  .menu-grid {
+    gap: 15px;
+  }
+
+  header,
+  footer,
+  .menu-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 685px) {
+  .menu-grid {
+    gap: 30px;
+    grid-template-columns: repeat(1, 320px);
+  }
+
+  .section-title {
+    font-size: 54px;
+  }
+
+  .we-have {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 375px) {
+  .menu-item {
+    padding: 15px;
+    height: 330px;
+
+    a {
+      gap: 15px;
+    }
+  }
+
+  .bottle {
+    width: 64px;
+  }
+
+  .menu-section {
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
+
+  header,
+  footer,
+  .menu-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section-title,
+  .we-have {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 352px) {
+  .menu-item {
+    width: 280px;
+  }
+
+  .menu-grid {
+    justify-items: center;
+  }
+}
